@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.screenOne{
+    width: 43.0rem;
+    height: 43.0rem;
+    background: white;
+    border-radius: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    gap: 2rem;
+}
+
+.screenOne h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.screenOne p{
+    font-family: 'DM sans';
+    font-size: 1.5rem;
+}
+
+.screenSecond{
+    width: 43.0rem;
+    height: 56.0rem;
+    background: white;
+    border-radius: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.screenSecond h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.screenSecond p{
+    font-family: 'Dancing Script';
+    font-size: 2.4rem;
+    padding: 1rem;
+
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    
+    border-radius: 5px;
+
+    width: 27.3rem;
+    height: 10.7rem;
+
+    background: #E4EDF1;
+}
+
+.screenSecond p{
+    animation: downTop;
+    animation-duration: 1.5s;
+    transition: 1s;
+}
+
+.screenSecond button{
+    color: white;
+    background: orange;
+    font-family: 'DM Sans';
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+
+    padding: 1.6rem;
+    border: none;
+
+    border-radius: .5rem;
+}
+
+.screenSecond button:hover{
+    cursor: pointer;
+    background: rgb(176, 117, 9);
+}
+
+.screenSecond img{
+    padding: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+.imageOne:hover{
+    animation: animation;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes animation{
+    0%{transform: translate(1px, 1px) rotate(0deg);}
+    10%{transform: translate(-1px, -1px) rotate(-1deg);}
+    20%{transform: translate(-2px, 0px) rotate(1deg)}
+    30%{transform: translate(2px, 2px) rotate(0deg)}
+    40%{transform: translate(1px, -1px) rotate(1deg)}
+    50%{transform: translate(-1px, 2px) rotate(-1deg)}
+    60%{transform: translate(-2px, 1px) rotate(0deg)}
+    70%{transform: translate(2px, 1px) rotate(-1deg)}
+    80%{transform: translate(-1px, -1px) rotate(1deg)}
+    90%{transform: translate(1px, 2px) rotate(0deg)}
+    100%{transform: translate(1px, -2px) rotate(-1deg)}
+
+}
+
+@keyframes downTop{
+    0%{transform: translateY(300px);
+    scale: .5;
+    transition: 1s;}
+
+
+    100%{transform: translateY(0);
+    scale: 1;}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
